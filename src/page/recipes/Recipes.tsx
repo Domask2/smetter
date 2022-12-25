@@ -2,22 +2,8 @@ import * as React from 'react';
 import {useEffect, useState} from "react";
 import {Outlet, useLocation, useNavigate} from 'react-router-dom';
 import {Breadcrumb, Menu, MenuProps} from 'antd';
+import {menuItems} from "../../service/data";
 import './recipes.scss';
-
-const menuItems:MenuProps['items']= [
-    {
-        key: 'recipe',
-        label: 'Рецепт',
-    },
-    {
-        key: 'cooking-time',
-        label: 'Время приготовления',
-    },
-    {
-        key: 'serving',
-        label: 'Подача',
-    },
-];
 
 const Recipes = ({ path, title }) => {
     const {pathname} = useLocation();
@@ -57,9 +43,7 @@ const Recipes = ({ path, title }) => {
             </Breadcrumb>
 
             <div className={'recipes__title'}>{ucFirst(title)}</div>
-
-            <Menu className='content-menu' onClick={onClick} selectedKeys={[current]}  mode="horizontal" items={menuItems}/>
-
+            <Menu className='recipes__title__menu' onClick={onClick} selectedKeys={[current]}  mode="horizontal" items={menuItems}/>
             <Outlet />
         </div>
     );

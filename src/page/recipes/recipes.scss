@@ -1,4 +1,5 @@
 @import "src/assets/styles/variables";
+
 .recipes {
     display: flex;
     flex-direction: column;
@@ -8,14 +9,14 @@
     &__title {
         font-size: $font-size-xl;
         margin-bottom: 26px;
-    }
-
-    .content-menu {
-        display: flex;
-        align-items: center;
-        background: #F16662;
-        border-radius: 4px;
-        height: 36px;
+        &__menu {
+            display: flex;
+            align-items: center;
+            background: #F16662;
+            border-radius: 4px;
+            height: 36px;
+            color: white;
+        }
     }
 
     .breadcrumb {

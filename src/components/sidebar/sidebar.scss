@@ -3,9 +3,11 @@
 .sidebar {
     position: relative;
     width: 240px;
-    min-height: 100vh;
+    min-height: calc(100vh - 20px);
     background: #F6F8F9;
-    padding: 10px 15px;
+    padding: 10px 10px;
+    height: 100%;
+    overflow: hidden;
 
     &_hidden {
         width: 26px;

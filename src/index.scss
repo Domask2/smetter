@@ -68,3 +68,45 @@ body {
     font-weight: bold;
   }
 }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.inputTable {
+  border: none;
+  outline: none;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-12 {
+  margin-right: 12px;
+}
+
+.block_delete {
+  cursor: pointer;
+  color: #7f7f7f;
+}
+
+.card__select__block {
+  height: 56px;
+  padding: 12px;
+}
+
+.card__select__block .ant-card-body {
+  padding: 0 !important;
+}

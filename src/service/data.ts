@@ -85,3 +85,18 @@ export const navigation: MenuProps['items'] = [
         key: 'combo',
     },
 ];
+
+export const menuItems:MenuProps['items']= [
+    {
+        key: 'recipe',
+        label: 'Рецепт',
+    },
+    {
+        key: 'cooking-time',
+        label: 'Время приготовления',
+    },
+    {
+        key: 'serving',
+        label: 'Подача',
+    },
+];

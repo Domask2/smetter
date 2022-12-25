@@ -9,7 +9,7 @@ import Combo from "../page/combo/Combo";
 import Recipes from "../page/recipes/Recipes";
 import CookingTime from "../page/cookingTime/CookingTime";
 import Serving from "../page/serving/Serving";
-
+import NotFound from "../page/notFound/NotFound ";
 import {routing} from "../service/data";
 import {routI} from "../service/type";
 
@@ -40,6 +40,7 @@ const Routing = () => {
                         );
                     })}
             </Route>
+            <Route path='*' element={<NotFound />} />
         </Routes>
     );
 };
