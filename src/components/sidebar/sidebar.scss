@@ -1,0 +1,51 @@
+@import "src/assets/styles/variables";
+
+.sidebar {
+    position: relative;
+    width: 240px;
+    min-height: 100vh;
+    background: #F6F8F9;
+    padding: 10px 15px;
+
+    &_hidden {
+        width: 26px;
+    }
+
+    &__content {
+        &_hidden {
+            display: none;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-size: $font-size-md;
+        text-align: center;
+        width: 128px;
+    }
+
+    &__separator {
+        width: 80px;
+        height: 1px;
+        background: $color-white;
+        margin: 0 auto;
+    }
+
+    &__menu {
+        margin-top: 23px;
+    }
+
+    &__toggle {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+        cursor: pointer;
+    }
+}

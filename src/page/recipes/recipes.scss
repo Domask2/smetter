@@ -1,0 +1,25 @@
+@import "src/assets/styles/variables";
+.recipes {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: $color-background;
+    margin-left: 32px;
+    &__title {
+        font-size: $font-size-xl;
+        margin-bottom: 26px;
+    }
+
+    .content-menu {
+        display: flex;
+        align-items: center;
+        background: #F16662;
+        border-radius: 4px;
+        height: 36px;
+    }
+
+    .breadcrumb {
+        font-weight: 600;
+    }
+}
+
