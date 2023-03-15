@@ -22,10 +22,6 @@ export const routing = [
 
 export const sidebar: MenuProps['items'] = [
     {
-        label: 'Сэндвичи',
-        key: 'sandwiches'
-    },
-    {
         label: 'Бургеры',
         key: 'burgers',
         children: [
